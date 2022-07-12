@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    padding: 3rem;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(118, 122, 155);
+
+}
+
+.menusup {
+    list-style-type: none;
+    text-align: center;
+    font-family:
+        'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.menusup li {
+    display: inline-block;
+    padding: .5rem
+}
+
+.menusup a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+    margin: .2rem;
+}
+
+.ind1 {
+    line-height: 1.5;
+    flex-wrap: wrap;
+}
+
+.bienvenidos {
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+}
+.abajo{display: flex; 
+    justify-content:left;
+}
+.head {width: 300;
+    background-color: black;
+position: sticky;
+top: 0;
+left: 0;}
+.head {display: flex;
+justify-content: center;}
+.video {  display: flex;
+    justify-content: center; width: 100%;}
+.primertexto{ display: flex;
+    text-align: center;}
+
+.abajotexto {font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 15px; margin: .7rem;}
+.mail{ text-decoration: none;
+color: black;
+font-size: 15px;}
+.estetica{display: flex;
+    justify-content: center;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+        font-size: 4rem;}
+.kali {display: flex;
+    justify-content: center;}
+.txestetica{display: flex;
+    text-align: center;}
+.consultas{display: flex;
+        justify-content: center;
+        font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+        font-size: 4rem;}
+.operando {display: flex;
+        justify-content: center;}
+.txconsultas{display: flex;
+        text-align: center;}
+.estudios{display: flex;
+            justify-content: center;
+            font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+            font-size: 4rem;}
+.analisis {display: flex;
+            justify-content: center;}
+.txestudios {display: flex;
+            text-align: center;}
+.rx {display: flex;
+    justify-content: center;}
+.txformulario {display: flex;
+    justify-content: center;}
+.formulario {display: flex;
+    justify-content: center;}
+.mapa {display: flex;
+    justify-content: center;}
+.contacto { display: flex;
+    justify-content: center;}
+.instagram-media {display: flex;
+    justify-content: center;}
+.txcasosclinicos {display: flex;
+    justify-content: center;}
+    
+    
+    
+    /*FLEXBOX
+    .caja1{background-color: black; width: 100%}
+    .caja2{background-color: rgb(118, 122, 155); width: 100%}
+    .caja3{background-color:  rgb(118, 122, 155); width: 100%}
+    .cajapadre{display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;gi
+        align-content: space-between;
+        gap: 50px;
+    
+    }*/    
+    /*GRID*/
+
+    .cajamen{background-color: black; width: 100%; grid-area: cajamen;}
+    .caja2{background-color: rgb(118, 122, 155); width: 100%; grid-area: caja2}
+    .cajafoot{background-color:  rgb(118, 122, 155); width: 100%; grid-area: cajafoot}
+    .cajaizq{background-color:  rgb(118, 122, 155); width: 100%; grid-area: cajaizq}
+    .cajaderch{background-color:  rgb(118, 122, 155); width: 100%; grid-area: cajaderch}
+    .cajapadre{display: grid;
+        grid-template-areas: 
+        " cajamen cajamen cajamen "
+        " cajaizq caja2 cajaderch "
+        " cajaizq cajafoot cajaderch " ;
+        grid-template-rows: 100px 1fr 80px;
+        grid-template-columns: 1% auto 1%;
+        grid-row-gap: 40px;
+        grid-column-gap: 20px;
+        height: 100vh;}
+    
