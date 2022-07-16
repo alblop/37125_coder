@@ -6,87 +6,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactanos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/est.css">
 </head>
-<link rel="stylesheet" href="../CSS/est.css">
 
 <body>
-    <div class="cajapadre">
-        <div class="cajamen">
-    <header class="head">
-        <div id="logo"><img src="../img/logo.jpg" width="100" alt=""></div>
-        <nav class="menusup">
-            <ul>
-                <li><a href="../index.html">Principal</a>
-                <li><a href="./quiensomos.html">¿Quiénes somos?</a>
-                <li><a href="./servicios.html">Servicios</a>
-                <li><a href="./contactanos.html">Contáctanos</a>
-                <li><a href="./casosclinicos.html">Casos Clinicos</a>
-            </ul>
-        </nav>
-        <title>Formulario</title>
-    </header>
-</div>
-<div class="caja2">
-    <main>
-        <section>
-            <article>
-                <h1 class="txformulario">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat maiores sunt laudantium quaerat
-                    eius blanditiis reiciendis molestiae, impedit, aperiam nisi ea, neque fugit laborum labore.
-                    Voluptatum quae repellendus consectetur animi.</h1>
-            </article>
-            <h2 class="contacto">Déjanos tus datos para contactarte</h2>
-            <form action=""  class="formulario">
+    <div class="cajapadre_co">
+        <div class="cajamen" data-aos="zoom-in" data-aos-duration="1500">
+            <header class="head">
+                <div id="logo"><img src="../img/logo.jpg" width="100" alt=""></div>
+                <nav class="menusup">
+                    <ul>
+                        <li><a href="../index.html">Principal</a>
+                        <li><a href="./quiensomos.html">¿Quiénes somos?</a>
+                        <li><a href="./servicios.html">Servicios</a>
+                        <li><a href="./contactanos.html">Contáctanos</a>
+                        <li><a href="./casosclinicos.html">Casos Clinicos</a>
+                    </ul>
+                </nav>
+                <title>Formulario</title>
+            </header>
+        </div>
+        <div class="caja2_co">
+            <section>
+                <article>
+                    <h2 class="txformulario animate__animated animate__backInUp">Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Fugiat maiores
+                        sunt laudantium quaerat
+                        eius blanditiis reiciendis molestiae, impedit, aperiam nisi ea, neque fugit laborum labore.
+                        Voluptatum quae repellendus consectetur animi.</h2>
+                </article>
+        </div>
+        <div class="caja3_co" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <h1 class="contacto animate__animated animate__backInDown">Déjanos tus datos para contactarte</h1>
+            <form action="" class="formulario">
                 <fieldset>
-                    <legend> Datos Personales</legend>
+                    <legend> Datos Personales</legend><br><br>
                     <label for="nombre">Nombre</label>
-                    <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido" required>
+                    <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu Nombre y Apellido"
+                        required><br><br>
                     <label for="Celular"> Celular</label>
                     <input type="number" name="Celular" id="Celular" placeholder="Digita 10 numeros de Celular"
-                        required>
+                        required><br><br>
                     <label for="correo"> Correo </label>
-                    <input type="email" name="correo" id="correo" placeholder="Ingresa tu correo electronico" required>
-                    <label for="servicio"> Tipo de Servicio </label>
-                    <input type="radio" name="servicio">Estetica
-                    <input type="radio" name="servicio">Consulta medica
-                    <input type="radio" name="servicio">Estudios de laboratorio
-                    <input type="radio" name="servicio">Venta de productos
+                    <input type="email" name="correo" id="correo" placeholder="Ingresa tu correo electronico"
+                        required><br><br>
+                    <label for="servicio"> Tipo de Servicio </label><br><br>
+                    <input type="radio" name="servicio">Estetica<br><br>
+                    <input type="radio" name="servicio">Consulta medica<br><br>
+                    <input type="radio" name="servicio">Estudios de laboratorio<br><br>
+                    <input type="radio" name="servicio">Venta de productos<br><br>
                     <form>Zona en la que vives
                         <select name="Zona" id="Zona">
                             <option value="Sur">Sur</option>
                             <option value="norte">Norte</option>
                         </select>
-                    </form>
-                    <textarea name="comment" rows=5 cols=40> Introduzca aquí sus comentarios </textarea>
+                    </form><br><br>
+                    <textarea name="comment" rows=5 cols=40> Introduzca aquí sus comentarios </textarea><br><br>
                     <input type="submit" value="Enviar Formulario">
-                    <input type="reset" value="Limpiar Formulario">
-
+                    <input type="reset" value="Limpiar Formulario"><br><br>
                 </fieldset>
             </form>
-        </section>
-        <section class="mapa">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120456.3861049238!2d-99.33580313750004!3d19.3578021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2001616794fe5%3A0xe8814d4aa09ec98d!2sESPECIALIDADES%20VETERINARIAS!5e0!3m2!1ses!2smx!4v1654899818273!5m2!1ses!2smx"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </section>
-    </main>
-</div>
-<div class="cajafoot">
-    <footer>
-        <section class="abajo">
-        <p>&copy; <img src="../img/logo.jpg" width="100" alt=""></p>
-        <address>
-            <section class="abajotexto">
-            <a class="mail" href="mailito:alblop_97@hotmail.com">alblop_97@hotmail.com</a>
-            <h1>5555934070</h1>
-            <h1>5552175517</h1>
-            <h1>MVZ Jorge Alberto Lopez Machuca</h1>
-        </section>
-        </address>
-    </section>
-    </footer>
-</div>
-</div>
+            </section>
+        </div>
+        <div class="caja4_co" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <section class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120456.3861049238!2d-99.33580313750004!3d19.3578021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2001616794fe5%3A0xe8814d4aa09ec98d!2sESPECIALIDADES%20VETERINARIAS!5e0!3m2!1ses!2smx!4v1654899818273!5m2!1ses!2smx"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </section>
+        </div>
+        <div class="cajafoot">
+            <footer>
+                <section class="abajo">
+                    <p>&copy; <img src="../img/logo.jpg" width="100" alt=""></p>
+                    <address>
+                        <section class="abajotexto">
+                            <a class="mail" href="mailito:alblop_97@hotmail.com">alblop_97@hotmail.com</a>
+                            <h1>5555934070</h1>
+                            <h1>5552175517</h1>
+                            <h1>MVZ Jorge Alberto Lopez Machuca</h1>
+                        </section>
+                    </address>
+                </section>
+            </footer>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
+
 </html>

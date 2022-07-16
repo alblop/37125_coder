@@ -1,7 +1,65 @@
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;}
+
+/*________________________________ */
+
+/* General */
+.cajamen {
+    background-color: black;
+    width: 100%;
+    grid-area: cajamen;
+}
+
+.cajafoot {
+    background-color: rgb(118, 122, 155);
+    width: 100%;
+    grid-area: cajafoot
+}
+
+.cajaizq {
+    background-color: rgb(118, 122, 155);
+    width: 100%;
+    grid-area: cajaizq
+}
+
+.cajaderch {
+    background-color: rgb(118, 122, 155);
+    width: 100%;
+    grid-area: cajaderch
+}
+
+li:hover {
+    border: solid 2px grey;
+}
+
+.abajotexto {
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 15px;
+    margin: .7rem;
+}
+
+.mail {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.abajo {
+    display: flex;
+    justify-content: left;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 nav {
@@ -11,6 +69,9 @@ nav {
 body {
     font-family: 'Times New Roman', Times, serif;
     background-color: rgb(118, 122, 155);
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
 
 }
 
@@ -35,10 +96,11 @@ body {
     margin: .2rem;
 }
 
-.ind1 {
-    line-height: 1.5;
-    flex-wrap: wrap;
-}
+
+
+/*________________________________ */
+
+/* index */
 
 .bienvenidos {
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
@@ -46,94 +108,279 @@ body {
     display: flex;
     justify-content: center;
 }
-.abajo{display: flex; 
-    justify-content:left;
-}
-.head {width: 300;
-    background-color: black;
-position: sticky;
-top: 0;
-left: 0;}
-.head {display: flex;
-justify-content: center;}
-.video {  display: flex;
-    justify-content: center; width: 100%;}
-.primertexto{ display: flex;
-    text-align: center;}
 
-.abajotexto {font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-    font-size: 15px; margin: .7rem;}
-.mail{ text-decoration: none;
-color: black;
-font-size: 15px;}
-.estetica{display: flex;
+.video {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.primertexto {
+    display: flex;
+    text-align: center;
+}
+
+.ind1 {
+    line-height: 1.5;
+    flex-wrap: wrap;
+}
+
+/*GRID*/
+
+.caja2_idx {
+    position: relative;
+    background-color: rgb(118, 122, 155);
+    width: 100%;
+    grid-area: caja2_idx
+}
+
+
+.cajapadre_idx {
+    display: grid;
+    grid-template-areas:
+        " cajamen cajamen cajamen "
+        " cajaizq caja2_idx cajaderch "
+        " cajaizq cajafoot cajaderch ";
+    grid-template-rows: 100px 1fr 80px;
+    grid-template-columns: 1% auto 1%;
+    grid-row-gap: 50px;
+    grid-column-gap: 20px;
+    height: 100vh;
+}
+
+
+
+/*________________________________ */
+
+
+/* Quienes somos */
+
+.rx_img {
+    width: 100%;
+}
+
+/*GRID*/
+.caja2_qs {
+    background-color: rgb(118, 122, 155);
+    width: 100%;
+    grid-area: caja2_qs
+}
+
+.cajapadre_qs {
+    display: grid;
+    grid-template-areas:
+        " cajamen cajamen cajamen "
+        " cajaizq caja2_qs cajaderch "
+        " cajaizq cajafoot cajaderch ";
+    grid-template-rows: 100px 1fr 80px;
+    grid-template-columns: 1% auto 1%;
+    grid-row-gap: 50px;
+    grid-column-gap: 20px;
+    height: 100vh;
+}
+
+
+/*________________________________ */
+
+
+/* Servicios */
+
+.kali_img {
+    width: 100%;
+}
+
+.op_img {
+    width: 100%;
+}
+
+.an_img {
+    width: 100%;
+}
+
+.estetica {
+    display: flex;
     justify-content: center;
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-        font-size: 4rem;}
-.kali {display: flex;
-    justify-content: center;}
-.txestetica{display: flex;
-    text-align: center;}
-.consultas{display: flex;
-        justify-content: center;
-        font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-        font-size: 4rem;}
-.operando {display: flex;
-        justify-content: center;}
-.txconsultas{display: flex;
-        text-align: center;}
-.estudios{display: flex;
-            justify-content: center;
-            font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-            font-size: 4rem;}
-.analisis {display: flex;
-            justify-content: center;}
-.txestudios {display: flex;
-            text-align: center;}
-.rx {display: flex;
-    justify-content: center;}
-.txformulario {display: flex;
-    justify-content: center;}
-.formulario {display: flex;
-    justify-content: center;}
-.mapa {display: flex;
-    justify-content: center;}
-.contacto { display: flex;
-    justify-content: center;}
-.instagram-media {display: flex;
-    justify-content: center;}
-.txcasosclinicos {display: flex;
-    justify-content: center;}
-    
-    
-    
-    /*FLEXBOX
-    .caja1{background-color: black; width: 100%}
-    .caja2{background-color: rgb(118, 122, 155); width: 100%}
-    .caja3{background-color:  rgb(118, 122, 155); width: 100%}
-    .cajapadre{display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;gi
-        align-content: space-between;
-        gap: 50px;
-    
-    }*/    
-    /*GRID*/
+    font-size: 4rem;
+}
 
-    .cajamen{background-color: black; width: 100%; grid-area: cajamen;}
-    .caja2{background-color: rgb(118, 122, 155); width: 100%; grid-area: caja2}
-    .cajafoot{background-color:  rgb(118, 122, 155); width: 100%; grid-area: cajafoot}
-    .cajaizq{background-color:  rgb(118, 122, 155); width: 100%; grid-area: cajaizq}
-    .cajaderch{background-color:  rgb(118, 122, 155); width: 100%; grid-area: cajaderch}
-    .cajapadre{display: grid;
-        grid-template-areas: 
+.kali {
+    display: flex;
+    justify-content: center;
+}
+
+.txestetica {
+    display: flex;
+    text-align: center;
+}
+
+.consultas {
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 4rem;
+}
+
+.operando {
+    display: flex;
+    justify-content: center;
+}
+
+.txconsultas {
+    display: flex;
+    text-align: center;
+}
+
+.estudios {
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 4rem;
+}
+
+.analisis {
+    display: flex;
+    justify-content: center;
+}
+
+.txestudios {
+    display: flex;
+    text-align: center;
+}
+
+.rx {
+    display: flex;
+    justify-content: center;
+}
+
+/*GRID*/
+.caja2_s {
+    background-color: rgb(118, 122, 155);
+    width: 100%;
+    grid-area: caja2_s
+}
+
+.caja3_s {
+    background-color: rgb(118, 122, 155);
+    width: 100%;
+    grid-area: caja3_s
+}
+
+.caja4_s {
+    background-color: rgb(118, 122, 155);
+    width: 100%;
+    grid-area: caja4_s
+}
+
+.cajapadre_s {
+    display: grid;
+    grid-template-areas:
         " cajamen cajamen cajamen "
-        " cajaizq caja2 cajaderch "
-        " cajaizq cajafoot cajaderch " ;
-        grid-template-rows: 100px 1fr 80px;
-        grid-template-columns: 1% auto 1%;
-        grid-row-gap: 40px;
-        grid-column-gap: 20px;
-        height: 100vh;}
-    
+        " cajaizq caja2_s cajaderch "
+        " cajaizq caja3_s cajaderch "
+        " cajaizq caja4_s cajaderch "
+        " cajaizq cajafoot cajaderch ";
+    grid-template-rows: auto;
+    grid-template-columns: 1% auto 1%;
+    grid-row-gap: 50px;
+    grid-column-gap: 20px;
+    height: 100vh;
+}
+
+
+/*________________________________ */
+
+
+
+/* Contactanos */
+.contacto {
+    display: flex;
+    justify-content: left;
+}
+
+.txformulario {
+    display: flex;
+    justify-content: center;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;
+}
+
+/*GRID*/
+.caja2_co {
+    background-color: rgb(118, 122, 155);
+    width: 100%;
+    grid-area: caja2_co
+}
+
+.caja3_co {
+    background-color: rgb(118, 122, 155);
+    width: 100%;
+    grid-area: caja3_co
+}
+
+.caja4_co {
+    background-color: rgb(118, 122, 155);
+    width: 100%;
+    grid-area: caja4_co
+}
+
+.cajapadre_co {
+    display: grid;
+    grid-template-areas:
+        " cajamen cajamen cajamen "
+        " cajaizq caja2_co cajaderch "
+        " cajaizq caja3_co cajaderch "
+        " cajaizq caja4_co cajaderch "
+        " cajaizq cajafoot cajaderch ";
+    grid-template-rows: auto;
+    grid-template-columns: 1% auto 1%;
+    grid-row-gap: 50px;
+    grid-column-gap: 20px;
+    height: 100vh;
+}
+
+
+
+/*________________________________ */
+
+
+
+/* Casos clinicos */
+
+.txcasosclinicos {
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-media {
+    display: flex;
+    justify-content: center;
+}
+/*GRID*/
+.caja2_cc {
+    background-color: rgb(118, 122, 155);
+    width: 100%;
+    grid-area: caja2_cc
+}
+
+.cajapadre_cc {
+    display: grid;
+    grid-template-areas:
+        " cajamen cajamen cajamen "
+        " cajaizq caja2_cc cajaderch "
+        " cajaizq cajafoot cajaderch ";
+    grid-template-rows: 100px 1fr 80px;
+    grid-template-columns: 1% auto 1%;
+    grid-row-gap: 50px;
+    grid-column-gap: 20px;
+    height: 100vh;
+}
+

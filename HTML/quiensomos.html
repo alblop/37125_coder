@@ -6,13 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quienes somos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/est.css">
 </head>
-<link rel="stylesheet" href="../CSS/est.css">
+
 
 <body>
-    <div class="cajapadre">
+    <div class="cajapadre_qs">
         <div class="cajaizq"></div>
-        <div class="cajamen">
+        <div class="cajamen" data-aos="zoom-in" data-aos-duration="1500">
             <header class="head">
                 <div class="logo"><img src="../img/logo.jpg" width="100" alt=""></div>
                 <nav class="menusup">
@@ -26,21 +29,24 @@
                 </nav>
             </header>
         </div>
-        <div class="caja2">
-        <main>
-            <section>
-                <div class="rx"><img src="../img/rayosx.jpg">
-                </div>
-                <article>
-                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium esse quis ut consequatur,
-                        nostrum amet recusandae, ab nam voluptatum labore eius distinctio? Explicabo praesentium placeat
-                        vel
-                        mollitia saepe quasi totam.
-                    </h1>
-                </article>
-            </section>
-        </main>
-    </div>
+        <div class="caja2_qs">
+            <main>
+                <section>
+                    <div class="rx" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">><img
+                            class="rx_img" src="../img/rayosx.jpg">
+                    </div>
+                    <article>
+                        <h1 class="animate__animated animate__backInDown">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Laudantium esse quis ut consequatur,
+                            nostrum amet recusandae, ab nam voluptatum labore eius distinctio? Explicabo praesentium
+                            placeat
+                            vel
+                            mollitia saepe quasi totam.
+                        </h1>
+                    </article>
+                </section>
+            </main>
+        </div>
         <div class="cajafoot">
             <footer>
                 <section class="abajo">
@@ -58,6 +64,8 @@
         </div>
         <div class="cajaderch"></div>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 
 </html>
