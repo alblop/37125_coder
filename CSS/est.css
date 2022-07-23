@@ -65,9 +65,10 @@ li:hover {
 nav {
     padding: 3rem;
 }
+footer{font-family: 'Mukta', sans-serif; }
 
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Mukta', sans-serif;
     background-color: rgb(118, 122, 155);
   min-height: 100vh;
   align-items: center;
@@ -107,47 +108,61 @@ body {
     font-size: 35px;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
-.video {
+video {
     display: flex;
     justify-content: center;
     width: 100%;
+    height: 100%;
 }
 
 .primertexto {
     display: flex;
     text-align: center;
+    width: 100%;
 }
 
 .ind1 {
     line-height: 1.5;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 /*GRID*/
 
-.caja2_idx {
+.caja2_idxbien {
     position: relative;
     background-color: rgb(118, 122, 155);
     width: 100%;
-    grid-area: caja2_idx
+    grid-area: caja2_idxbien
 }
+.caja3_idxvid{    position: relative;
+    background-color: rgb(118, 122, 155);
+    width: 100%;
+    grid-area: caja3_idxvid }
+
+.caja4_idxvid{position: relative;
+    background-color: rgb(118, 122, 155);
+    width: 100%;
+    grid-area: caja4_idxvid}
 
 
 .cajapadre_idx {
     display: grid;
     grid-template-areas:
         " cajamen cajamen cajamen "
-        " cajaizq caja2_idx cajaderch "
-        " cajaizq cajafoot cajaderch ";
-    grid-template-rows: 100px 1fr 80px;
-    grid-template-columns: 1% auto 1%;
-    grid-row-gap: 50px;
-    grid-column-gap: 20px;
+        " cajaizq caja2_idxbien cajaderch "
+        " cajaizq caja3_idxvid cajaderch "
+        " cajaizq caja4_idxvid cajaderch "
+        " cajafoot cajafoot cajafoot ";
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
     height: 100vh;
 }
-
 
 
 /*________________________________ */
@@ -214,6 +229,11 @@ body {
     text-align: center;
 }
 
+.consulta{ display: flex;
+    justify-content: center;}
+
+.co_img{width: 100%;}
+
 .consultas {
     display: flex;
     justify-content: center;
@@ -225,6 +245,12 @@ body {
     display: flex;
     justify-content: center;
 }
+.operaciones {display: flex;
+    justify-content: center; font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 4rem;}
+
+.txoperaciones { display: flex;
+    text-align: center;}
 
 .txconsultas {
     display: flex;
@@ -254,39 +280,79 @@ body {
 }
 
 /*GRID*/
-.caja2_s {
+.caja2_siz {
     background-color: rgb(118, 122, 155);
     width: 100%;
-    grid-area: caja2_s
+    grid-area: caja2_siz
+}
+.caja2_sder { background-color: rgb(118, 122, 155);
+    width: 100%;
+    grid-area: caja2_sder}
+
+.caja3_siz {
+    background-color: rgb(118, 122, 155);
+    width: 100%;
+    grid-area: caja3_siz
+}
+.caja3_sder {
+    background-color: rgb(118, 122, 155);
+    width: 100%;
+    grid-area: caja3_sder
+}
+.caja4_siz {
+    background-color: rgb(118, 122, 155);
+    width: 100%;
+    grid-area: caja4_siz
+}
+.caja4_sder {
+    background-color: rgb(118, 122, 155);
+    width: 100%;
+    grid-area: caja4_sder
+}
+.caja5_siz {
+    background-color: rgb(118, 122, 155);
+    width: 100%;
+    grid-area: caja5_siz
+}
+.caja5_sder {
+    background-color: rgb(118, 122, 155);
+    width: 100%;
+    grid-area: caja5_sder
 }
 
-.caja3_s {
-    background-color: rgb(118, 122, 155);
-    width: 100%;
-    grid-area: caja3_s
-}
 
-.caja4_s {
-    background-color: rgb(118, 122, 155);
-    width: 100%;
-    grid-area: caja4_s
-}
 
 .cajapadre_s {
     display: grid;
     grid-template-areas:
-        " cajamen cajamen cajamen "
-        " cajaizq caja2_s cajaderch "
-        " cajaizq caja3_s cajaderch "
-        " cajaizq caja4_s cajaderch "
-        " cajaizq cajafoot cajaderch ";
-    grid-template-rows: auto;
-    grid-template-columns: 1% auto 1%;
+        " cajamen  cajamen "
+        " caja2_siz  caja2_sder "
+        " caja3_siz caja3_sder "
+        " caja4_siz caja4_sder "
+        " caja5_siz caja5_sder "
+        " cajafoot cajafoot ";
+    grid-template-rows: repeat(6,auto);
+    grid-template-columns: repeat(2, auto);
     grid-row-gap: 50px;
     grid-column-gap: 20px;
     height: 100vh;
 }
 
+@media (max-width: 750px)  {
+    .cajapadre_s{
+        grid-template-areas: 
+        "cajamen"
+        "caja2_siz"
+        "caja2_sder"
+        "caja3_sder"
+        "caja3_siz"
+        "caja4_siz"
+        "caja4_sder"
+        "caja5_sder"
+        "caja5_siz"
+        "cajafoot";
+    }
+}
 
 /*________________________________ */
 
